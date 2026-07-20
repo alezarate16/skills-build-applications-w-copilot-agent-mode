@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getApiBaseUrl } from '../utils/api';
 
+// Example endpoint: https://<codespace>-8000.app.github.dev/api/users/
+
 export default function Users() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
