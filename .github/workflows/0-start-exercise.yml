@@ -1,6 +1,7 @@
 name: Step 0 # Start Exercise build-applications-w-GHCP-agent-mode
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -37,10 +38,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Get response templates
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit

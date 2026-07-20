@@ -1,6 +1,7 @@
 name: Step 5 # Setup the React presentation tier
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "build-octofit-app"
@@ -28,10 +29,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Get response templates
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
@@ -144,10 +145,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Get response templates
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
